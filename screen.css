@@ -4145,7 +4145,6 @@ ul.checklist::-webkit-scrollbar {
 ul.checklist li {
     background: rgba(0,0,0,0.5) url(img/tick.svg) -100px -100px no-repeat;
     background-size: 18px 20px;
-    border-radius: 4px;
     cursor: pointer;
     float: left;
     font-size: 16px;
@@ -4154,6 +4153,7 @@ ul.checklist li {
     margin: 0 auto 0.5em auto;
     padding: 0 35px 0 10px;
     width: 47.5%;
+    border: 1px solid #626161;
     -webkit-font-smoothing: antialiased;
     display: -webkit-flex;
     display: -ms-flexbox;
