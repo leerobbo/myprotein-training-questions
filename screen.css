@@ -840,6 +840,8 @@ legend, .ui-input-text input, .ui-input-search input {
 .ui-btn, label.ui-btn {
     background-color: rgba(0,0,0,0.5);
     transition: all 0.2s;
+    border: 1px solid #626161;
+
 }
 .ui-btn {
     text-decoration: none!important;
@@ -851,7 +853,7 @@ legend, .ui-input-text input, .ui-input-search input {
     border-radius: .3125em;
 }
 .ui-btn-corner-all, .ui-btn.ui-corner-all, .ui-slider-track.ui-corner-all, .ui-flipswitch.ui-corner-all, .ui-li-count {
-    border-radius: 4px;
+    border-radius: 0;
 }
 .ui-btn-icon-notext.ui-btn-corner-all, .ui-btn-icon-notext.ui-corner-all {
     border-radius: 1em;
