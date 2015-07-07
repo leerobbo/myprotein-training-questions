@@ -59,6 +59,14 @@ label {
   font-stretch: normal;
   unicode-range: U+0020-25CA; 
 }
+ .intro {
+    overflow-x: hidden;
+    background: url('img/bg-small.jpg') 0 0 white no-repeat;
+    background-size: cover;
+    background-size: 120%;
+    background-position: 50% 35%;
+ }
+
 
  .intro h2 {
     margin: 50px 0 24px;
@@ -68,14 +76,19 @@ label {
 .intro h3 {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     text-transform: none;
-    padding: 0 50px;
+    padding: 0 20px;
     font-size: 20px;
 }
 
 .gender h3 {
-/*    margin: 190px 0 40px;*/
     margin: 0 0 24px;
+    color: #495f73;
 
+}
+
+.gender [data-role=header] {
+
+    background: #0060C1;
 }
 
 .gender-icons span {
@@ -83,10 +96,11 @@ label {
     float: left;
     width: 100%;
     margin-top: 12px;
+      color: #B5BFC8;
 }
 
 .gender path {
-    fill: white;
+    fill: #B5BFC8;
 }
 
 .ui-radio-on .gender path, .ui-radio-on span {
@@ -96,6 +110,53 @@ label {
 
 .male .gender {
     margin-left: 20px;
+}
+
+.goals .ui-content {
+    padding: 0;
+}
+
+.goals .title-container {
+    padding: 2em 2em 0;
+}
+
+.cycle-slide-active, .cycle-slide  {
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.cycle-slide h3 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #495f73;
+    text-transform: none;
+    font-size: 20px;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: visible;
+}
+
+.swiper-container-horizontal>.swiper-pagination {
+    bottom: -54px;
+}
+
+.swiper-slide {
+    text-align: center;  
+}
+
+.swiper-slide img { 
+  width: 100%;
+}
+
+.swiper-wrapper {
+    margin-left: 27%;      
 }
 
 
@@ -838,9 +899,9 @@ legend, .ui-input-text input, .ui-input-search input {
     background-color: rgba(0, 0, 0, .04);
 }
 .ui-btn, label.ui-btn {
-    background-color: rgba(0,0,0,0.5);
     transition: all 0.2s;
-    border: 1px solid #626161;
+    border: 1px solid #d5dade;
+    background: #f1f2f2;
 
 }
 .ui-btn {
@@ -944,9 +1005,7 @@ legend, .ui-input-text input, .ui-input-search input {
 }
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
     background-color: white;
-
-    color: white;
-    background: none;
+    color: white;  
     text-align: center;
     margin-top: 30%;
 }
@@ -974,7 +1033,7 @@ legend, .ui-input-text input, .ui-input-search input {
     font-size: 16px;
     letter-spacing: 0px;
     font-family: oswald-regular;
-    transition: all 0.2s;
+    transition: background-color 0.2s;
 }
 .ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited {
 /*    color: #38c;*/
@@ -1139,25 +1198,36 @@ legend, .ui-input-text input, .ui-input-search input {
 }
 body.ui-mobile-viewport, div.ui-mobile-viewport {
     overflow-x: hidden;
-    background: url('img/bg-small.jpg') 0 0 white no-repeat;
     background-size: cover;
 }
+
+
 .ui-mobile [data-role=page], .ui-mobile [data-role=dialog], .ui-page {
     top: 0;
     left: 0;
     width: 100%;
     min-height: 100%;
     position: absolute;
-    display: none;
+    /*display: none;*/
+    opacity: 0;
     border: 0;
+    z-index: 0;  
 }
+
+
+
+
+
+
 .ui-page {
     outline: 0;
 }
 .ui-mobile .ui-page-active {
     display: block;
+        opacity: 1;
     overflow: visible;
     overflow-x: hidden;
+    z-index: 100;
 }
 @media screen and (orientation:portrait) {
     .ui-mobile .ui-page {
@@ -4049,7 +4119,7 @@ html .ui-field-contain>label+.ui-flipswitch, html .ui-popup .ui-field-contain>la
     height: auto;
     margin: 0 auto;
     display: block;
-    top: 20px;
+    top: 12px;
     position: absolute;
     left: 0;
     right: 0;
