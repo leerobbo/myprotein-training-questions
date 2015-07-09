@@ -25,9 +25,13 @@ h3 strong {
 }
 
 h4 {
-    font-size: 20px;
-    margin-top: -10px;
+    font-size: 22px;
+    margin-top:0;
     line-height: 25px;
+    text-transform: none;
+    margin-bottom: 12px;
+    color: #495f73;
+    clear: both;
 }
 
 h5 {
@@ -39,6 +43,10 @@ h5 {
 html {
     font-size: 18px !important;
       -webkit-font-smoothing: antialiased;
+}
+
+body {
+    color: #728391;
 }
 
 label {
@@ -75,6 +83,8 @@ label {
  .intro h2 {
     margin: 50px 0 24px;
     line-height: 40px;
+    text-align: center;
+    color: #fff;
  } 
 
 .intro h3 {
@@ -82,11 +92,18 @@ label {
     text-transform: none;
     padding: 0 20px;
     font-size: 20px;
+     text-align: center;
+    color: #fff;
+}
+
+.intro .actions {
+    border: none;
 }
 
 .gender h3 {
     margin: 0 0 24px;
     color: #495f73;
+    text-align: center;
 
 }
 
@@ -1057,8 +1074,8 @@ legend, .ui-input-text input, .ui-input-search input {
 }
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
     background-color: #f1f2f2;
-    color: white;  
-    text-align: center;
+   /* color: white;  
+    text-align: center;*/
     margin-top: 30%;
 }
 .ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
@@ -1414,7 +1431,7 @@ body.ui-mobile-viewport, div.ui-mobile-viewport {
     border-width: 0;
     overflow: visible;
     overflow-x: hidden;
-    padding: 2em;
+    padding: 1em;
 }
 .ui-corner-all>.ui-header:first-child, .ui-corner-all>.ui-content:first-child, .ui-corner-all>.ui-footer:first-child {
     border-top-left-radius: inherit;
@@ -3109,11 +3126,10 @@ ul.ui-grid-a, ul.ui-grid-b, ul.ui-grid-c, ul.ui-grid-d, ul.ui-grid-solo, li.ui-b
     filter: progid:DXImageTransform.Microsoft.Matrix(M11=.7071067811865474,  M12=-.7071067811865477,  M21=.7071067811865477,  M22=.7071067811865474,  SizingMethod='auto expand');
 }
 .ui-checkbox, .ui-radio {
-    margin: .5em 0;
+    margin: 0 auto 0.5em auto;
     position: relative;
-    width: 46%;
+    width: 100%;
     float: left;
-    margin: 0px 5px;
 }
 /*.ui-checkbox .ui-btn, .ui-radio .ui-btn {
     margin: 0;
@@ -4180,13 +4196,14 @@ html .ui-field-contain>label+.ui-flipswitch, html .ui-popup .ui-field-contain>la
 .actions {
     margin: 0px auto;
     display: block;
-    position: absolute;
+    position: absolute;  
     bottom: 0;
     padding-top: 20px;
     left: 0;
     right: 0;
     padding: 1em 2em 1em;
     background-color: #fff;
+    border-top: 4px solid #f1f2f2;
 }
 
 .calendar {
@@ -4254,6 +4271,109 @@ html .ui-field-contain>label+.ui-flipswitch, html .ui-popup .ui-field-contain>la
 label:hover {
     text-shadow: none;
 }
+
+article {
+    background: #fff;
+    float: left;
+    padding-right: 2%;
+    margin: 2% 0;
+    border-bottom: 2px solid #DADADA;
+}
+
+article strong {
+    padding-top: 3%;
+  width: 52%;
+  float: left;
+}
+
+article img {
+   width: 45%;
+  float: left;
+  margin-right: 3%;
+}
+
+.ui-page-theme-a .article-link {
+    padding: 0;
+    width: auto;
+    color: #728391;
+    font-family: 'Helvetica Neue';
+    font-weight: 300;
+    text-align: left;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.results {
+    padding-bottom: 60px;
+}
+
+.product {
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 12px;
+    background: #fff;
+    float: left;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #DADADA;
+}
+.product .price {
+    color: #495f73;
+      font-size: 16px;
+}
+
+.product  .title {
+    min-height: 40px;
+}
+
+.product p {
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.product .stars {
+    width: 60%;
+      margin: 6px 0 0;
+}
+
+
+.product:nth-child(odd) {
+    margin-right: 0;
+}
+
+.product img {
+    width: 80%;
+}
+
+.product p {
+    margin: 0 0 6px;
+}
+
+.product a {
+    margin-top: 16px;
+}
+
+.ui-page-theme-a .article-link:focus, .ui-page-theme-a .article-link:hover, .ui-page-theme-a .article-link:active, .ui-page-theme-a .article-link:focus strong {
+    color: #728391;
+}
+
+.ui-page-theme-a .text-link {
+    background: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue';
+    color: #0060C1;
+    text-decoration: underline;
+    text-transform: none;
+    width: auto;
+    padding: 0;
+    float: left;
+    clear: both;
+    margin: 12px 0 48px;
+}
+
+
 
 ul.checklist {
     list-style-type: none;
